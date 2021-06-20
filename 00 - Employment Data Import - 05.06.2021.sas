@@ -1,5 +1,5 @@
 *-------------------------------------------------------------------------------------------------------*
-|                         	 SAS Institute | Data and Analytics for Good Journal                        |
+|                         	 SAS Institute | Data and Analytics for Good Journal                    |
 |                               00 - Employment Data Import - 05.06.2021                                |
 *-------------------------------------------------------------------------------------------------------*;
 libname 	county "C:\Users\ligrov\OneDrive - SAS\Data for Good\Social Innovations Summit\SAS Data";
