@@ -842,60 +842,60 @@ data IPUMS.ACS_2019 ;
 *******************************************************************  Occupation Code Groupings ;
 *******************************************************************  Note: manual corrections appear on the second row ;
 	   OCCUP_LTD=. ;
-	if OCC2010 in ( 0 9920 ) 																								then 	OCCUP_LTD=0 ;
+	if OCC2010 in ( 0 9920 ) 																		then 	OCCUP_LTD=0 ;
 	if OCC2010 in ( 10 20 40 50 60 100 110 120 130 140 150 160 200 210 220 230 300 310 320 430 330 340 350 360 410 420  
-					30 205 ) 																								then 	OCCUP_LTD=1 ;
-	if OCC2010 in ( 500 510 520 530 540 560 600 620 700 710 720 730 ) 														then 	OCCUP_LTD=2 ;
-	if OCC2010 in ( 800 810 820 830 840 850 860 900 910 930 940 950 ) 														then 	OCCUP_LTD=3 ;
+					30 205 ) 																then 	OCCUP_LTD=1 ;
+	if OCC2010 in ( 500 510 520 530 540 560 600 620 700 710 720 730 ) 													then 	OCCUP_LTD=2 ;
+	if OCC2010 in ( 800 810 820 830 840 850 860 900 910 930 940 950 ) 													then 	OCCUP_LTD=3 ;
 	if OCC2010 in ( 1000 1110 1010 1020 1040 1060 1100 1200 1240 1220 
-					1050 1230 )																								then 	OCCUP_LTD=4 ;
-	if OCC2010 in ( 1300 1310 1320 1340 1350 1360 1400 1410 1420 1430 1440 1450 1460 1520 1530 1540 1550 1560 )				then 	OCCUP_LTD=5 ;
+					1050 1230 )																then 	OCCUP_LTD=4 ;
+	if OCC2010 in ( 1300 1310 1320 1340 1350 1360 1400 1410 1420 1430 1440 1450 1460 1520 1530 1540 1550 1560 )								then 	OCCUP_LTD=5 ;
 	if OCC2010 in ( 1600 1610 1640 1650 1700 1710 1720 1740 1760 1800 1810 1820 1860 1840 1900 1910 1920 1930 1940 1960 
-					1830 )																									then 	OCCUP_LTD=6 ;
-	if OCC2010 in ( 2000 2010 2020 2040 2050 2060 )																			then 	OCCUP_LTD=7 ;
-	if OCC2010 in ( 2100 2140 2150 )																						then 	OCCUP_LTD=8 ;
+					1830 )																	then 	OCCUP_LTD=6 ;
+	if OCC2010 in ( 2000 2010 2020 2040 2050 2060 )																then 	OCCUP_LTD=7 ;
+	if OCC2010 in ( 2100 2140 2150 )																	then 	OCCUP_LTD=8 ;
 	if OCC2010 in ( 2200 2300 2310 2320 2330 2340 2400 2430 2440 2540 2550 )												then 	OCCUP_LTD=9 ;
 	if OCC2010 in ( 2600 2630 2700 2710 2720 2740 2750 2760 2800 2810 2820 2830 2840 2850 2860 2900 2910 2920 
-					2825 )																									then 	OCCUP_LTD=10 ;
+					2825 )																	then 	OCCUP_LTD=10 ;
 	if OCC2010 in ( 3000 3010 3030 3040 3050 3060 3110 3120 3130 3140 3150 3160 3200 3210 3220 3230 3240 3250
-					3260 3300 3310 3320 3400 3410 3500 3510 3520 3530 3540									  )				then 	OCCUP_LTD=11 ;
-	if OCC2010 in ( 3600 3610 3620 3630 3640 3650 )																			then 	OCCUP_LTD=12 ;
+					3260 3300 3310 3320 3400 3410 3500 3510 3520 3530 3540									  )		then 	OCCUP_LTD=11 ;
+	if OCC2010 in ( 3600 3610 3620 3630 3640 3650 )																then 	OCCUP_LTD=12 ;
 	if OCC2010 in ( 3700 3710 3720 3730 3740 3750 3800 3820 3840 3850 3900 3910 3920 3940 3950 
-					3930 )																									then 	OCCUP_LTD=13 ;
-	if OCC2010 in ( 4000 4010 4020 4030 4040 4050 4060 4110 4120 4130 4140 4150 )											then 	OCCUP_LTD=14 ;
-	if OCC2010 in ( 4200 4210 4220 4230 4240 4250 )																			then 	OCCUP_LTD=15 ;
-	if OCC2010 in ( 4300 4320 4340 4350 4400 4410 4420 4430 4460 4500 4510 4520 4530 4540 4550 4600 4610 4620 4640 4650 )	then 	OCCUP_LTD=16 ;
+					3930 )																	then 	OCCUP_LTD=13 ;
+	if OCC2010 in ( 4000 4010 4020 4030 4040 4050 4060 4110 4120 4130 4140 4150 )												then 	OCCUP_LTD=14 ;
+	if OCC2010 in ( 4200 4210 4220 4230 4240 4250 )																then 	OCCUP_LTD=15 ;
+	if OCC2010 in ( 4300 4320 4340 4350 4400 4410 4420 4430 4460 4500 4510 4520 4530 4540 4550 4600 4610 4620 4640 4650 )							then 	OCCUP_LTD=16 ;
 	if OCC2010 in ( 4700 4710 4720 4740 4750 4760 4800 4810 4820 4830 4840 4850 4900 4920 4930 4940 4950 
-					4965 )																									then 	OCCUP_LTD=17 ;
+					4965 )																	then 	OCCUP_LTD=17 ;
 	if OCC2010 in ( 5000 5010 5020 5030 5100 5110 5120 5130 5140 5150 5160 5200 5350 5220 5230 5240 5250 5260
 					5300 5310 5320 5330 5340 5360 5400 5410 5420 5500 5510 5520 5530 5540 5550 5560 5600 5610
 					5620 5630 5700 5800 5810 5820 5840 5850 5860 5900 5910 5920  
-					5940 5165 )																								then 	OCCUP_LTD=18 ;
+					5940 5165 )																then 	OCCUP_LTD=18 ;
 	if OCC2010 in ( 6010 6040 6050 6100 6120 6130 
-					6005 )																									then 	OCCUP_LTD=19 ;
+					6005 )																	then 	OCCUP_LTD=19 ;
 	if OCC2010 in ( 6200 6210 6220 6230 6240 6250 6260 6300 6320 6330 6360 6400 6420 6430 6440 6460 6500 6520
 					6530 6600 6660 6700 6710 6720 6730 6740 
-					6515 6355 6765 )																						then 	OCCUP_LTD=20 ;
-	if OCC2010 in ( 6800 6820 6830 6840 6940 )																				then 	OCCUP_LTD=20 ;
+					6515 6355 6765 )															then 	OCCUP_LTD=20 ;
+	if OCC2010 in ( 6800 6820 6830 6840 6940 )																then 	OCCUP_LTD=20 ;
 	if OCC2010 in ( 7000 7010 7020 7030 7040 7100 7110 7120 7130 7140 7150 7160 7200 7210 7220 7240 7260 7300 7320
 					7330 7340 7350 7360 7410 7420 7430 7510 7540 7550 7560 7610 
-					7315 7630 )																								then 	OCCUP_LTD=22 ;
+					7315 7630 )																then 	OCCUP_LTD=22 ;
 	if OCC2010 in ( 7700 7710 7720 7730 7740 7750 7800 7810 7830 7840 7850 7900 7920 7930 7940 7950 7960 8000 8010 8220
 					8030 8040 8060 8100 8130 8140 8150 8200 8210 8230 8240 8260 8250 8300 8310 8320 8330 8340 8350 8400
 					8410 8420 8450 8460 8500 8510 8550 8530 8540 8600 8610 8620 8630 8640 8650 8710 8720 8730 8740 8750
 					8760 8800 8810 8830 8850 8860 8910 8920 8930 8940 8950 
-					7855 8965 )																								then 	OCCUP_LTD=23 ;
+					7855 8965 )																then 	OCCUP_LTD=23 ;
 	if OCC2010 in ( 9000 9030 9040 9110 9120 9130 9140 9150 9200 9230 9240 9260 9300 9310 9350 9360 9410 9420 9510 9520
 					9560 9600 9610 9620 9630 9640 9650 9720 9750 
-					9050 9100 )																								then 	OCCUP_LTD=24 ;
+					9050 9100 )																then 	OCCUP_LTD=24 ;
 
-	if OCC2010 in ( 9800 9810 9820 9830 )																					then 	OCCUP_LTD=25 ;
+	if OCC2010 in ( 9800 9810 9820 9830 )																	then 	OCCUP_LTD=25 ;
 
 
 *******************************************************************  Occupation Code Groupings - Narrow ;
 			if OCCUP_LTD = 0 							then Occup_LTD2=0 ;
 	/*		  0 = "N/A"																				*/
-	else 	if OCCUP_LTD in ( 1 2 3 4 5 6 8 10 )		then Occup_LTD2=1 ;
+	else 	if OCCUP_LTD in ( 1 2 3 4 5 6 8 10 )						then Occup_LTD2=1 ;
 	/*		  1 = "Management, Business, Science, and Arts Occupations"
 			  2 = "Business Operations Specialists"
 			  3 = "Financial Specialists"
@@ -904,28 +904,28 @@ data IPUMS.ACS_2019 ;
 			  6 = "Life, Physical, and Social Science Occupations"
 			  8 = "Legal Occupations"
 			  10 = "Arts, Design, Entertainment, Sports, and Media Occupations"						*/
-	else 	if OCCUP_LTD in ( 7 9 11 12 )				then Occup_LTD2=2 ;
+	else 	if OCCUP_LTD in ( 7 9 11 12 )							then Occup_LTD2=2 ;
 	/*		  7 = "Community and Social Services Occupations"
 			  9 = "Education, Training, and Library Occupations"
 			  11 = "Healthcare Practitioners and Technical Occupations"
-			  12 = "Healthcare Support Occupations"													*/
-	else 	if OCCUP_LTD in ( 17 18 )					then Occup_LTD2=3 ;
+			  12 = "Healthcare Support Occupations"										*/
+	else 	if OCCUP_LTD in ( 17 18 )							then Occup_LTD2=3 ;
 	/*		  17 = "Sales and Related Occupations"
-			  18 = "Office and Administrative Support Occupations"									*/
-	else 	if OCCUP_LTD in ( 14 15 16 )				then Occup_LTD2=4 ;
+			  18 = "Office and Administrative Support Occupations"								*/
+	else 	if OCCUP_LTD in ( 14 15 16 )							then Occup_LTD2=4 ;
 	/*		  14 = "Food Preparation and Serving Occupations"
 			  15 = "Building and Grounds Cleaning and Maintenance Occupations"
-			  16 = "Personal Care and Service Occupations"											*/
-	else 	if OCCUP_LTD in ( 19 20 21 22 23 24 )		then Occup_LTD2=5 ;
+			  16 = "Personal Care and Service Occupations"									*/
+	else 	if OCCUP_LTD in ( 19 20 21 22 23 24 )						then Occup_LTD2=5 ;
 	/*		  19 = "Farming, Fishing, and Forestry Occupations"
 			  20 = "Construction and Extraction Occupations"
 			  21 = "Extraction Workers"						
 			  22 = "Installation, Maintenance, and Repair Workers"
 			  23 = "Production Occupations"
-			  24 = "Transportation and Material Moving Occupations"									*/
-	else 	if OCCUP_LTD in ( 13 25 )					then Occup_LTD2=6 ;
+			  24 = "Transportation and Material Moving Occupations"								*/
+	else 	if OCCUP_LTD in ( 13 25 )							then Occup_LTD2=6 ;
 	/*		  13 = "Protective Service Occupations"
-			  25 = "Military Specific Occupations" ;												*/
+			  25 = "Military Specific Occupations" ;									*/
 
 
 ********************************************************  Educational Attainment - US Born | Prepare variables for analysis ;
@@ -935,7 +935,7 @@ data IPUMS.ACS_2019 ;
 	perwt2  = ( perwt * educ_group ) ;
 
 	format 		Student_Group $20. ;
-	if			HISPAN = 0 and RACE=1		then Student_Group = "White" ;
+	if		HISPAN = 0 and RACE=1		then Student_Group = "White" ;
 	else if		HISPAN = 0 and RACE=2		then Student_Group = "Black" ;
 	else if 	hispan in ( 1 2 3 4)		then Student_Group = "Hispanic";
 	else		Student_Group="Other" ;
@@ -962,10 +962,10 @@ run;
 
 **************************************************************  Note - this file uses 2000 Census Definitions ;
 proc import datafile="C:\Users\ligrov\OneDrive - SAS\Data for Good\Social Innovations Summit\Raw Data\County Level to PUMA Crosswalk - 10.11.16.csv"
-     out=PUMA
-     dbms=csv
-     replace;
-	 guessingrows=1000;
+     	out=PUMA
+     	dbms=csv
+     	replace;
+	guessingrows=1000;
 run;
 
 ***************************************************************  Years - Just 2019, for now... ;
@@ -986,29 +986,28 @@ quit;
 **************************************************************  Must update to use 2010 Census PUMA Definitions ;
 **************************************************************  http://mcdc.missouri.edu/applications/geocorr2018.html ;
 proc import datafile="C:\Users\ligrov\OneDrive - SAS\Data for Good\Social Innovations Summit\Raw Data\MCDC - geocorr2018.csv"
-     out=PUMA2
-     dbms=csv
-     replace;
+     	out=PUMA2
+     	dbms=csv
+     	replace;
 	 guessingrows=1000;
 run;
 
 proc sql;
 	create 	table PUMA_X_Years as
 	select	a.puma as PUMA00,
-			a.*, 
-			b.puma12 as PUMA, b.PUMAname
+		a.*, 
+		b.puma12 as PUMA, b.PUMAname
 	from	puma_x_years1 as a left join puma2 as b
-	on		a.statefip=b.state & a.county=b.county 
+	on	a.statefip=b.state & a.county=b.county 
 	order 	by statefip, county, year ;
 quit;
 
 proc sql;
 	create 	table PUMA_X_Years2 as
-	select	
-			a.*, 
-			b.puma12, b.PUMAname
+	select	a.*, 
+		b.puma12, b.PUMAname
 	from	puma_x_years1 as a left join puma2 as b
-	on		a.statefip=b.state & a.county=b.county 
+	on	a.statefip=b.state & a.county=b.county 
 	order 	by statefip, county, year ;
 quit;
 
@@ -1018,12 +1017,12 @@ data PUMA_X_Years;
 	rename 	puma12=puma ;
 
 	label 	PUMA12 	= "PUMA | Revised"
-			PUMA 	= "PUMA | Old";
+		PUMA 	= "PUMA | Old";
 run;
 
 
 *-------------------------------------------------------------------------------------*
-|                      Estimate Statistics - By PUMA and County 		              |
+|                      Estimate Statistics - By PUMA and County 		      |
 *-------------------------------------------------------------------------------------*;
 ****************************  Issue: samples in some counties too small for reliable estimates ;
 
