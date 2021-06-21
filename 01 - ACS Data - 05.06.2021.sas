@@ -1223,65 +1223,65 @@ proc sql;
 	select	distinct StateFIP, County as CountyFIPS, Year, 
 
 /*******************************************************************  By Sector */
-		sum( PerOfCounty * dropouts_all )  		/ sum( PerOfCounty * (  dropouts_all ne . ) ) 		as Dropouts_All 			label="Dropouts - All" 							format percent9.2		, 	
-		sum( PerOfCounty * dropouts_white )  		/ sum( PerOfCounty * (  dropouts_white ne . ) ) 	as Dropouts_White 			label="Dropouts - Whites" 						format percent9.2		,  	
-		sum( PerOfCounty * dropouts_black )  		/ sum( PerOfCounty * (  dropouts_black ne . ) ) 	as Dropouts_Black 			label="Dropouts - Blacks" 						format percent9.2		,  	
-		sum( PerOfCounty * dropouts_hispanic )  	/ sum( PerOfCounty * (  dropouts_hispanic ne . ) ) 	as Dropouts_Hispanic 		label="Dropouts - Hispanic" 					format percent9.2		,  	
-		sum( PerOfCounty * dropouts_other )  		/ sum( PerOfCounty * (  dropouts_other ne . ) ) 	as Dropouts_Other 			label="Dropouts - Others" 						format percent9.2		,  	
+		sum( PerOfCounty * dropouts_all )  		/ sum( PerOfCounty * (  dropouts_all ne . ) ) 		as Dropouts_All 		label="Dropouts - All" 				format percent9.2		, 	
+		sum( PerOfCounty * dropouts_white )  		/ sum( PerOfCounty * (  dropouts_white ne . ) ) 	as Dropouts_White 		label="Dropouts - Whites" 			format percent9.2		,  	
+		sum( PerOfCounty * dropouts_black )  		/ sum( PerOfCounty * (  dropouts_black ne . ) ) 	as Dropouts_Black 		label="Dropouts - Blacks" 			format percent9.2		,  	
+		sum( PerOfCounty * dropouts_hispanic )  	/ sum( PerOfCounty * (  dropouts_hispanic ne . ) ) 	as Dropouts_Hispanic 		label="Dropouts - Hispanic" 			format percent9.2		,  	
+		sum( PerOfCounty * dropouts_other )  		/ sum( PerOfCounty * (  dropouts_other ne . ) ) 	as Dropouts_Other 		label="Dropouts - Others" 			format percent9.2		,  	
 
-		sum( PerOfCounty * dropouts_men )  		/ sum( PerOfCounty * (  dropouts_men ne . ) ) 		as Dropouts_Men 			label="Dropouts - Men" 							format percent9.2		, 	
-		sum( PerOfCounty * dropouts_women )  		/ sum( PerOfCounty * (  dropouts_women ne . ) ) 	as Dropouts_Women 			label="Dropouts - Women" 						format percent9.2		,  	
+		sum( PerOfCounty * dropouts_men )  		/ sum( PerOfCounty * (  dropouts_men ne . ) ) 		as Dropouts_Men 		label="Dropouts - Men" 				format percent9.2		, 	
+		sum( PerOfCounty * dropouts_women )  		/ sum( PerOfCounty * (  dropouts_women ne . ) ) 	as Dropouts_Women 		label="Dropouts - Women" 			format percent9.2		,  	
 
 /*******************************************************************  Internet Access */
-		sum( PerOfCounty *  Internet_Access ) 		/ sum( PerOfCounty * ( Internet_Access ne .) )		as Internet_Access			label="Internet Access in Home"					format percent9.2		,	
-		sum( PerOfCounty *  High_Speed_Internet )	/ sum( PerOfCounty * ( High_Speed_Internet ne .) )	as High_Speed_Internet		label="High Speed Internet in Home"				format percent9.2		,
+		sum( PerOfCounty *  Internet_Access ) 		/ sum( PerOfCounty * ( Internet_Access ne .) )		as Internet_Access		label="Internet Access in Home"			format percent9.2		,	
+		sum( PerOfCounty *  High_Speed_Internet )	/ sum( PerOfCounty * ( High_Speed_Internet ne .) )	as High_Speed_Internet		label="High Speed Internet in Home"		format percent9.2		,
 
 
 /*******************************************************************  Labor Market */
-		sum( PerOfCounty * Employment_Rate_Men )  	/ sum( PerOfCounty * ( Employment_Rate_Men ne . ) ) 	as Employment_Rate_Men		label="Employment Rate | Men"					format percent9.1 		,
-		sum( PerOfCounty * Not_in_LF_Men )  		/ sum( PerOfCounty * ( Not_in_LF_Men ne . ) )		as Not_in_LF_Men			label="Not in Labor Force | Men"				format percent9. 		,
-		sum( PerOfCounty * Men_Not_LF_25_54 ) 		/ sum( PerOfCounty * ( Men_Not_LF_25_54 ne . ) )	as Men_Not_LF_25_54		label="Not in LF | Men 25-54"					format percent9. 		,
+		sum( PerOfCounty * Employment_Rate_Men )  	/ sum( PerOfCounty * ( Employment_Rate_Men ne . ) ) 	as Employment_Rate_Men		label="Employment Rate | Men"			format percent9.1 		,
+		sum( PerOfCounty * Not_in_LF_Men )  		/ sum( PerOfCounty * ( Not_in_LF_Men ne . ) )		as Not_in_LF_Men		label="Not in Labor Force | Men"		format percent9. 		,
+		sum( PerOfCounty * Men_Not_LF_25_54 ) 		/ sum( PerOfCounty * ( Men_Not_LF_25_54 ne . ) )	as Men_Not_LF_25_54		label="Not in LF | Men 25-54"			format percent9. 		,
 
-		sum( PerOfCounty * Employment_Rate_Women ) 	/ sum( PerOfCounty * ( Employment_Rate_Women ne . ) ) 	as Employment_Rate_Women	label="Employment Rate"							format percent9.1 		,
-		sum( PerOfCounty * Not_in_LF_Women )  		/ sum( PerOfCounty * ( Not_in_LF_Women ne . ) )		as Not_in_LF_Women			label="Not in Labor Force | Women"				format percent9. 		,
+		sum( PerOfCounty * Employment_Rate_Women ) 	/ sum( PerOfCounty * ( Employment_Rate_Women ne . ) ) 	as Employment_Rate_Women	label="Employment Rate"				format percent9.1 		,
+		sum( PerOfCounty * Not_in_LF_Women )  		/ sum( PerOfCounty * ( Not_in_LF_Women ne . ) )		as Not_in_LF_Women		label="Not in Labor Force | Women"		format percent9. 		,
 
-		sum( PerOfCounty * Not_in_LF_25P )  		/ sum( PerOfCounty * ( Not_in_LF_25P ne . ) )		as Not_in_LF_25P			label="Not in Labor Force | 25+"				format percent9. 		,
+		sum( PerOfCounty * Not_in_LF_25P )  		/ sum( PerOfCounty * ( Not_in_LF_25P ne . ) )		as Not_in_LF_25P		label="Not in Labor Force | 25+"		format percent9. 		,
 
-		sum( PerOfCounty * Sex_Ratio )  		/ sum( PerOfCounty * ( Sex_Ratio ne . ) )		as Sex_Ratio				label="Sex Ratio - Men to Women"				format 6.2 				,
+		sum( PerOfCounty * Sex_Ratio )  		/ sum( PerOfCounty * ( Sex_Ratio ne . ) )		as Sex_Ratio			label="Sex Ratio - Men to Women"		format 6.2 			,
 
 /*******************************************************************  By Sector */	
-		sum( PerOfCounty * Occup_Group_0 )  		/ sum( PerOfCounty * ( Occup_Group_0 ne . ) )	 	as Occup_Group_0			label="No Occupation"							format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_1 )  		/ sum( PerOfCounty * ( Occup_Group_1 ne . ) )		as Occup_Group_1			label="White Collar"							format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_2 )  		/ sum( PerOfCounty * ( Occup_Group_2 ne . ) ) 		as Occup_Group_2			label="Community, Health and Service"			format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_3 )  		/ sum( PerOfCounty * ( Occup_Group_3 ne . ) ) 		as		Occup_Group_3			label="Office Sales and Support"				format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_4 )  		/ sum( PerOfCounty * ( Occup_Group_4 ne . ) ) 		as		Occup_Group_4			label="Service Occupations"						format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_5 )  		/ sum( PerOfCounty * ( Occup_Group_5 ne . ) ) 			as		Occup_Group_5			label="Blue Collar Laborers"					format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_6 )  		/ sum( PerOfCounty * ( Occup_Group_6 ne . ) ) 			as		Occup_Group_6			label="Protective Services"						format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_0 )  		/ sum( PerOfCounty * ( Occup_Group_0 ne . ) )	 	as Occup_Group_0		label="No Occupation"				format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_1 )  		/ sum( PerOfCounty * ( Occup_Group_1 ne . ) )		as Occup_Group_1		label="White Collar"				format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_2 )  		/ sum( PerOfCounty * ( Occup_Group_2 ne . ) ) 		as Occup_Group_2		label="Community, Health and Service"		format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_3 )  		/ sum( PerOfCounty * ( Occup_Group_3 ne . ) ) 		as Occup_Group_3		label="Office Sales and Support"		format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_4 )  		/ sum( PerOfCounty * ( Occup_Group_4 ne . ) ) 		as Occup_Group_4		label="Service Occupations"			format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_5 )  		/ sum( PerOfCounty * ( Occup_Group_5 ne . ) ) 		as Occup_Group_5		label="Blue Collar Laborers"			format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_6 )  		/ sum( PerOfCounty * ( Occup_Group_6 ne . ) ) 		as Occup_Group_6		label="Protective Services"			format percent9.1 		,
 
-		sum( PerOfCounty * Occup_Group_0_Men )  	/ sum( PerOfCounty * ( Occup_Group_0_Men ne . ) )		as		Occup_Group_0_Men		label="No Occupation | Men"						format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_1_Men )  	/ sum( PerOfCounty * ( Occup_Group_1_Men ne . ) ) 		as		Occup_Group_1_Men		label="White Collar | Men"						format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_2_Men )  	/ sum( PerOfCounty * ( Occup_Group_2_Men ne . ) ) 		as		Occup_Group_2_Men		label="Community, Health and Service | Men"		format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_3_Men )  	/ sum( PerOfCounty * ( Occup_Group_3_Men ne . ) ) 		as		Occup_Group_3_Men		label="Office Sales and Support | Men"			format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_4_Men )  	/ sum( PerOfCounty * ( Occup_Group_4_Men ne . ) ) 		as		Occup_Group_4_Men		label="Service Occupations | Men"				format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_5_Men )  	/ sum( PerOfCounty * ( Occup_Group_5_Men ne . ) ) 		as		Occup_Group_5_Men		label="Blue Collar Laborers | Men"				format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_6_Men )  	/ sum( PerOfCounty * ( Occup_Group_6_Men ne . ) ) 		as		Occup_Group_6_Men		label="Protective Services | Men"				format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_0_Men )  	/ sum( PerOfCounty * ( Occup_Group_0_Men ne . ) )	as Occup_Group_0_Men		label="No Occupation | Men"			format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_1_Men )  	/ sum( PerOfCounty * ( Occup_Group_1_Men ne . ) ) 	as Occup_Group_1_Men		label="White Collar | Men"			format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_2_Men )  	/ sum( PerOfCounty * ( Occup_Group_2_Men ne . ) ) 	as Occup_Group_2_Men		label="Community, Health and Service | Men"	format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_3_Men )  	/ sum( PerOfCounty * ( Occup_Group_3_Men ne . ) ) 	as Occup_Group_3_Men		label="Office Sales and Support | Men"		format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_4_Men )  	/ sum( PerOfCounty * ( Occup_Group_4_Men ne . ) ) 	as Occup_Group_4_Men		label="Service Occupations | Men"		format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_5_Men )  	/ sum( PerOfCounty * ( Occup_Group_5_Men ne . ) ) 	as Occup_Group_5_Men		label="Blue Collar Laborers | Men"		format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_6_Men )  	/ sum( PerOfCounty * ( Occup_Group_6_Men ne . ) ) 	as Occup_Group_6_Men		label="Protective Services | Men"		format percent9.1 		,
 
-		sum( PerOfCounty * Occup_Group_0_Women )  	/ sum( PerOfCounty * ( Occup_Group_0_Women ne . ) )		as		Occup_Group_0_Women		label="No Occupation | Women"					format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_1_Women )  	/ sum( PerOfCounty * ( Occup_Group_1_Women ne . ) ) 	as		Occup_Group_1_Women		label="White Collar | Women"					format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_2_Women )  	/ sum( PerOfCounty * ( Occup_Group_2_Women ne . ) ) 	as		Occup_Group_2_Women		label="Community, Health and Service | Women"	format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_3_Women )  	/ sum( PerOfCounty * ( Occup_Group_3_Women ne . ) ) 	as		Occup_Group_3_Women		label="Office Sales and Support | Women"		format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_4_Women )  	/ sum( PerOfCounty * ( Occup_Group_4_Women ne . ) ) 	as		Occup_Group_4_Women		label="Service Occupations | Women"				format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_5_Women )  	/ sum( PerOfCounty * ( Occup_Group_5_Women ne . ) ) 	as		Occup_Group_5_Women		label="Blue Collar Laborers | Women"			format percent9.1 		,
-		sum( PerOfCounty * Occup_Group_6_Women )  	/ sum( PerOfCounty * ( Occup_Group_6_Women ne . ) ) 	as		Occup_Group_6_Women		label="Protective Services | Women"				format percent9.1 		
+		sum( PerOfCounty * Occup_Group_0_Women )  	/ sum( PerOfCounty * ( Occup_Group_0_Women ne . ) )	as Occup_Group_0_Women		label="No Occupation | Women"			format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_1_Women )  	/ sum( PerOfCounty * ( Occup_Group_1_Women ne . ) ) 	as Occup_Group_1_Women		label="White Collar | Women"			format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_2_Women )  	/ sum( PerOfCounty * ( Occup_Group_2_Women ne . ) ) 	as Occup_Group_2_Women		label="Community, Health and Service | Women"	format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_3_Women )  	/ sum( PerOfCounty * ( Occup_Group_3_Women ne . ) ) 	as Occup_Group_3_Women		label="Office Sales and Support | Women"	format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_4_Women )  	/ sum( PerOfCounty * ( Occup_Group_4_Women ne . ) ) 	as Occup_Group_4_Women		label="Service Occupations | Women"		format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_5_Women )  	/ sum( PerOfCounty * ( Occup_Group_5_Women ne . ) ) 	as Occup_Group_5_Women		label="Blue Collar Laborers | Women"		format percent9.1 		,
+		sum( PerOfCounty * Occup_Group_6_Women )  	/ sum( PerOfCounty * ( Occup_Group_6_Women ne . ) ) 	as Occup_Group_6_Women		label="Protective Services | Women"		format percent9.1 		
 
 	from	z2 
 	group	by 1,2,3 ;
 quit;
 
 
-*-----------------------------------------------------------------------------------*
-| 									Final Refinements								|
-*-----------------------------------------------------------------------------------*;
+*---------------------------------------------------------------------------------------------------------------*
+| 				 	Final Refinements							|
+*---------------------------------------------------------------------------------------------------------------*;
 data ipums.ACS_County_Labor_Environment;
 	set ACS_County_Labor_Environment ;
 
