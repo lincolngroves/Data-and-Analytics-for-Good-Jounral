@@ -960,6 +960,7 @@ run;
 |                    Import PUMA to County Cross-Walk                                 |
 *-------------------------------------------------------------------------------------*;
 
+**************************************************************  Source: https://www.psc.isr.umich.edu/dis/census/Features/puma2cnty/ ;
 **************************************************************  Note - this file uses 2000 Census Definitions ;
 proc import datafile="C:\Users\ligrov\OneDrive - SAS\Data for Good\Social Innovations Summit\Raw Data\County Level to PUMA Crosswalk - 10.11.16.csv"
      	out=PUMA
